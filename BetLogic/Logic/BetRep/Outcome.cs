@@ -13,6 +13,6 @@ namespace BetLogic.Logic.BetRep
     {
         T1,
         Draw,
-        T2
+        T2,
     }
 }

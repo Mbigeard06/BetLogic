@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BetLogic.Logic.BetRep
 {
-    internal class BetInMarket
+    public class BetInMarket
     {
         private Bet bet;
         /// <summary>
@@ -22,5 +22,15 @@ namespace BetLogic.Logic.BetRep
         /// Bet property
         /// </summary>
         public Bet Bet { get { return bet; } }
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="bet">Bet to be put in the market</param>
+        public BetInMarket(Bet bet)
+        {
+            this.bet = bet;
+            this.maxStake = 1;
+        }
     }
 }

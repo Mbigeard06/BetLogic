@@ -34,6 +34,11 @@ namespace BetLogic.Logic.BetRep
             this.outcome = outcome;
         }
 
+        public override string ToString()
+        {
+            return "Outcom : " + outcome + " odd : " + odd;
+        }
+
 
     }
 }
